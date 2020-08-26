@@ -93,7 +93,6 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var SLACK_CLIENT_TOKEN = 'xoxp-1330090420449-1316092925989-1312311013990-b86b0f855dcc8b84635700cf0c45a884';
 var conversationId = 'G019A44CK53'; // チャンネルのID
 // fetch('https://slack.com/api/conversations.history',{
 //   method:'GET',
@@ -119,7 +118,7 @@ $.ajax({
   type: 'GET',
   dataType: 'json',
   data: {
-    token: SLACK_CLIENT_TOKEN,
+    token: "".concat("xoxp-1330090420449-1316092925989-1311057482279-315ce4ca23450f03bae0d0df61a3b0eb"),
     channel: conversationId
   },
   timeout: 5000

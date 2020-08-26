@@ -1,6 +1,5 @@
 
-const SLACK_CLIENT_TOKEN = 'xoxp-1330090420449-1316092925989-1312311013990-b86b0f855dcc8b84635700cf0c45a884';
-const conversationId = 'G019A44CK53' // チャンネルのID
+const conversationId = 'G019A44CK53'; // チャンネルのID
 
 // fetch('https://slack.com/api/conversations.history',{
 //   method:'GET',
@@ -25,7 +24,7 @@ $.ajax({
   type: 'GET',
   dataType: 'json',
   data:{
-    token:SLACK_CLIENT_TOKEN,
+    token:`${process.env.TOKEN}`,
     channel:conversationId
   },
   timeout: 5000,

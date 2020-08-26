@@ -1,7 +1,9 @@
 import webpack from 'webpack'
+import Dotenv from 'dotenv-webpack'
 
 module.exports = {
   entry:"./src/assets/js/app.js",
+  target: 'node',
   output:{
     filename: 'app.js'
   },
@@ -20,5 +22,8 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins:[
+    new Dotenv()
+  ]  
 }
